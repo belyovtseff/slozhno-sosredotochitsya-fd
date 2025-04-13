@@ -13,6 +13,11 @@
     --highlight-color: var(--color-pink-3, #ffc2e6);
     --title-color: var(--color-dark-2, #353430);
     --page-background-color: var(--color-pink-1, #fff1f7);
+    --color-o: var(--color-black-o, rgba(53,52,48, .4));
+  }
+
+  .theme-auto .decorated-zone__decor {
+    display: none;
   }
 }
 
@@ -26,6 +31,7 @@
   --highlight-color: var(--color-pink-3, #ffc2e6);
   --title-color: var(--color-dark-2, #353430);
   --page-background-color: var(--color-pink-1, #fff1f7);
+  --color-o: var(--color-black-o, rgba(53,52,48, .4));
 }
 
 .theme-light .decorated-zone__decor {

@@ -14,6 +14,7 @@
     --title-color: var(--color-dark-1, #000028);
     --page-font-family: "IBM Plex mono", monospace;
     --page-background-color: var(--color-black-1, #000028);
+    --color-o: var(--color-purple-o, rgba(255,0,112, .4));
   }
 }
 
@@ -27,4 +28,5 @@
   --title-color: var(--color-dark-1, #000028);
   --page-font-family: "IBM Plex mono", monospace;
   --page-background-color: var(--color-black-1, #000028);
+  --color-o: var(--color-purple-o, rgba(255,0,112, .4));
 }

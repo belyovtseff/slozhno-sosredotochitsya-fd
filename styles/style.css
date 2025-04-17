@@ -72,7 +72,7 @@
 }
 
 .header {
-  padding-block-start: 65px;
+  padding-block-start: 75px;
   display: grid;
   grid-template-columns: 1fr;
   min-block-size: 668px;
@@ -81,18 +81,19 @@
 
 .header__theme-menu {
   justify-self: end;
+  margin-block-end: 5px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 1.5px 12px;
+  padding: 1.6px 11px;
   text-align: center;
   text-transform: lowercase;
   font-weight: 400;
@@ -104,10 +105,11 @@
 
 .header__theme-menu-button:focus {
   outline: 0;
+  
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end-color: var(--color-o, #ff007040);
+  border-block-end-color: currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -127,6 +129,7 @@
   line-height: 1.3;
   white-space: pre-line;
   max-block-size: 117px;
+  margin-block-start: -10px;
 }
 
 .title-decor {
@@ -252,12 +255,13 @@ h4.section__title-decor {
   }
 
   .header {
-    padding-block-start: 171px;
-    padding-block-end: 183px;
+    padding-block-start: 189px;
+    padding-block-end: 179px;
   }
 
   .page__title {
-    margin-block-start: 177px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    margin-block-start: 165px;
     margin-inline-start: -20px;
   }
 
@@ -268,7 +272,7 @@ h4.section__title-decor {
   }
 
   .header__theme-menu-button {
-    padding: 2.5px 12px;
+    padding: 2.3px 11px;
   }
 
   .decorated-zone::after {
@@ -291,6 +295,7 @@ h4.section__title-decor {
   }
 
   .section-what .section__list {
+    display: grid;
     grid-column: 1 / 4;
   }
 
@@ -346,12 +351,13 @@ h4.section__title-decor {
       padding: 0 20px;
     }
     
-    .page-title {
+    .page__title {
       text-shadow: 4px 4px 0 var(--color-purple-2, #ff0070);
+      margin-block-start: 0;
     }
   
     .section {
-      column-gap: 30px;
+      column-gap: 10px;
     }
   
     .section-what .section__list {
@@ -365,9 +371,12 @@ h4.section__title-decor {
   
     .header__theme-menu {
       justify-self: center;
-      margin-inline-start: 20px;
-      margin-block-start: 20px;
+      margin-block-start: 19px;
       margin-block-end: 273px;
+    }
+
+    .header__theme-menu-button {
+      padding: 2.5px 10px;
     }
   
     .header__theme-menu-list {
@@ -376,10 +385,6 @@ h4.section__title-decor {
 
     .header__title-text {
       max-width: 491px;
-    }
-
-    .page__title {
-      margin-block-start: 0;
     }
 
     .header__title-text {
